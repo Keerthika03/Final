@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Sidebar (hidden by default) -->
+        <nav class="sidebar bar-block card top animate-left" style="display:none;z-index:2;width:5%;min-width:200px;height: auto;background-color: black;color: white;margin-left: -8px" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button" style="color: #9F8B27">☰</a>
+            <a href="Rooms.html" onclick="w3_close()" class="bar-item button">ROOMS</a>
+            <a href="Location.html" onclick="w3_close()" class="bar-item button">LOCATION</a>
+            <a href="Gallery.html" onclick="w3_close()" class="bar-item button">GALLERY</a>
+            <a href="Contact.html" onclick="w3_close()" class="bar-item button">CONTACT US</a>
+        </nav>
+        
+        <!-- Top menu -->
+        <section class="head">
+            <div style="max-width:1200px;">
+                <div class="button padding-16 left" onclick="w3_open()" style="font-size: 20px">☰</div>
+                <div class="left padding-16" style="font-size: 14px; margin-top: 5px;"><strong>FURAMA RIVERFRONT</strong></div>
+                <div class="center padding-16"><img src="Images/logo.png" height="30px"></div>
+                <div class="right" style="margin-top: -45px"><strong><a href="Login.html">LOGIN</a></strong></div>
+            </div>
+            <img src="Images/FRF-Home.jpg" width="101.2%" height="440px" style="margin-left: -8px;box-shadow: 2px -1px 2px 1px black">
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!--About Hotel-->
+        <section>
+            <img  class="mySlides left" src="Images/deluxe-new.jpg" style="width:500px;height: 300px;margin-left: 30px">
+            <img class="mySlides left" src="Images/executive-club.jpg"img_ny.jpg style="width:500px;height: 300px;margin-left: 30px">
+            <img class="mySlides left" src="Images/pool.jpg" style="width:500px;height: 300px;margin-left: 30px">
+            <img class="mySlides left" src="Images/superior-twin.jpg" style="width:500px;height: 300px;margin-left: 30px">
+            
+            <aside style="text-align: center;">
+                <strong style="font-size: 40px;">FURAMA RIVERFRONT - SINGAPORE HOTEL</strong>
+                <br>
+                <p style="color: #B98D25">Singapore, a city known for its fast-paced efficiency and multi-cultural vibrancy is home to enclaves waiting to be discovered.</p>
+                    
+                <p>For a well-appointed accommodation that offers not only retreat but an excellent springboard from which to explore Singapore, step into Furama RiverFront, Singapore. The business hotel in Singapore provides a gateway to the Central Business District, cultural Chinatown, heritage Tiong Bahru, entertainment areas of Robertson, Clark and Boat Quays as well as the premier shopping district, Orchard Road.</p>
+                
+                <p>From generously-sized well-appointed rooms overlooking either the Singapore skyline, lush greenery or the swimming pool to the best of local and International dining in Singapore, travellers will feel welcomed at Furama RiverFront. Unwind and rejuvenate, as gracious service ensures guests are kept comfortable.</p>
+            </aside>
+        </section>
+        <br>
+        <br>
+        
+        <!--Contact Info  and Map-->
+        <article style="background-color: #F2F4F4;margin-left: -8px;margin-right: -8px;">
+            <br>
+            <br>
+            <br>
+            <aside style="margin-left: 90px;">
+                <strong style="font-size: 30px;color: #B98D25;">CONTACT US</strong>
+                <br>
+                <br>
+                <strong>FURAMA RIVERFRONT, SINGAPORE</strong>
+                <p>405 Havelock Road, Singapore 169633<br><br>
+                    Tel (65) 6333 8898<br>
+                    Fax (65) 6733 1588<br>
+                    Email riverfront@furama.com
+                </p>
+            </aside>
+            <aside id="map" style="margin-top: -247px;"></aside>
+            <br>
+            <br>
+            <br>
+        </article>
+        
+        <!--Footer-->
+        <footer style="background-color: #B3B1B1;margin-left: -8px;margin-right: -8px;">
+            <br>
+            <br>
+            <p style="margin-left: 25px;">OUR BRANDS</p>
+            <br>
+            <img src="Images/logo.png" width="10%">
+            <img src="Images/xclusive.png" width="10%"><img src="Images/fx.png" width="3%">
+           <table style="margin-top: -80px;margin-left: 530px;">
+               <tr>
+                   <td style="font-size: 20px;">FURAMA RIVERFRONT</td>
+               </tr>
+               <tr>
+                   <td>405 Havelock Road, Singapore 169633</td>
+               </tr>
+               <tr>
+                   <td>Tel (65) 6333 8898 Fax (65) 6733 1588 Email riverfront@furama.com</td>
+               </tr>
+               <tr>
+                   <td>Rooms</td>
+                   <td>FAQ</td>
+               </tr>
+               <tr>
+                   <td>Loctaion</td>
+                   <td>Contact Us</td>
+               </tr>
+               <tr>
+                   <td>Gallery</td>
+               </tr>
+            </table>
+            <br>
+            <br>
+        </footer>
+        
+        <script>
+            // Script to open and close sidebar
+            function w3_open()
+            {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close()
+            {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+            
+            //Automatic SlideShow
+            var myIndex = 0;
+            carousel();
+            
+            function carousel()
+            {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++)
+                {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if(myIndex > x.length)
+                {
+                    myIndex = 1
+                }    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            //Adding Map using API key
+            // Initialize and add the map
+            function initMap()
+            {
+                // The location of Uluru
+                //1.288755, 103.836130
+                var uluru = {lat: 1.288755, lng: 103.836130};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 4, center: uluru});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+            // AIzaSyAPeSG8OcGkoy1DH2-5eNCDKoULYN1vk0g
+        </script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbYy-NXqUjrk0_ZXFK7hwYVvH-vTe29M4&callback=initMap">
+    </script>
+    </body>
+</html>

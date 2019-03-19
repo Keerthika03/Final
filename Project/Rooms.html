@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Room Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Sidebar (hidden by default) -->
+        <nav class="sidebar bar-block card top animate-left" style="display:none;z-index:2;width:5%;min-width:200px;height: auto;background-color: black;color: white;margin-left: -8px" id="mySidebar">
+            <br>
+            <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button" style="color: #9F8B27;font-size: 20px">☰</a>
+            <a href="Rooms.html" onclick="w3_close()" class="bar-item button">ROOMS</a>
+            <a href="Location.html" onclick="w3_close()" class="bar-item button">LOCATION</a>
+            <a href="Gallery.html" onclick="w3_close()" class="bar-item button">GALLERY</a>
+            <a href="Contact.html" onclick="w3_close()" class="bar-item button">CONTACT US</a>
+        </nav>
+        
+        <!-- Top menu -->
+        <section class="head">
+            <div style="max-width:1200px;">
+                <div class="button padding-16 left" onclick="w3_open()" style="font-size: 20px">☰</div>
+                <div class="left padding-16" style="font-size: 14px; margin-top: 5px;"><strong>FURAMA RIVERFRONT</strong></div>
+                <div class="center padding-16">
+                    <a href="Main.html">
+                    <img src="Images/logo.png" height="30px">
+                    </a>
+                </div>
+                <div class="right" style="margin-top: -45px"><strong><a href="Login.html">LOGIN</a></strong></div>
+            </div>
+            <img src="Images/nw_h_Rooms.jpg" width="101.2%" height="440px" style="margin-left: -8px;box-shadow: 2px -1px 2px 1px black">
+        </section>
+        <p style="padding-left: 4%;font-size: 200%">ROOMS</p>
+        <section style="padding-left: 10%;">
+            <a href="#Superior" class="href_style">Superior</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#Executive" class="href_style">Executive Club</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#Family" class="href_style">Family Room</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#Deluxe" class="href_style">Deluxe</a>
+        </section>
+        <br>
+        <br>
+        <br>
+        <!--ROOMS DETAILS-->
+        <section style="padding-bottom: 70px">
+            <!--Room 1 Superior-->
+            <article id="Superior">
+                <div style="margin-left: 20px">
+                    <img src="Images/superior-twin.jpg" width="600px" height="400px" align="left" style="margin-top: -10px">
+                </div>
+                <div class="rooms_text1">
+                    <div style="padding-left: 57%">
+                        <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
+                        <h2>Superior</h2>
+                        <p>Our Superior Rooms offer travellers comfort and convenience away from home and has two single beds.</p>
+                        <a href="Superior.html" class="btn btn-default" style="background-color: #C5A978">View Room Details</a>
+                    </div>
+                </div>
+            </article>
+            <!--Room 2 Executive Club-->
+            <article style="margin-top: 20px" id="Executive">
+                <div style="margin-right: 20px">
+                    <img src="Images/executive-club.jpg" width="600px" height="400px" align="right">
+                </div>
+                <div class="rooms_text2">
+                    <div style="padding-left: 40px;padding-right: 51%">
+                        <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
+                        <h2>Executive Club</h2>
+                        <p>Guests staying in our Executive Rooms can look forward to premium amenities, a bird’s eye view of downtown Singapore and additional details created for a more memorable stay.</p>
+                        <a href="Superior.html" class="btn btn-default" style="background-color: #C5A978">View Room Details</a>
+                    </div>
+                </div>
+            </article>
+            <!--Room 3 Family Room-->
+            <article style="margin-top: 20px" id="Family">
+                <div style="margin-left: 20px">
+                    <img src="Images/family-room.jpg" width="600px" height="400px" align="left"  style="margin-top: -10px">
+                </div>
+                <div class="rooms_text1">
+                    <div style="padding-left: 57%">
+                        <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
+                        <h2>Family Room</h2>
+                        <p>Fitted with two Queen beds and special amenities for children aged 12 years-old and below, our Family Rooms also feature children-friendly furniture, and can accommodate up to two adults and two kids.</p>
+                        <a href="Superior.html" class="btn btn-default" style="background-color: #C5A978">View Room Details</a>
+                    </div>
+                </div>
+            </article>
+            <!--Room 4 Deluxe-->
+            <article style="margin-top: 20px" id="Deluxe">
+                <div style="margin-right: 20px">
+                    <img src="Images/Deluxe-Room.jpg" width="600px" height="400px" align="right">
+                </div>
+                <div class="rooms_text2">
+                    <div style="padding-left: 40px;padding-right: 51%">
+                        <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
+                        <h2>Deluxe</h2>
+                        <p>The Deluxe Room tempts guests with generous space for guests’ mobility or additional bed requirements.</p>
+                        <a href="Superior.html" class="btn btn-default" style="background-color: #C5A978">View Room Details</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        <!--Footer-->
+        <footer style="background-color: #B3B1B1;margin-left: -8px;margin-right: -8px;">
+            <br>
+            <br>
+            <p style="margin-left: 25px;">OUR BRANDS</p>
+            <br>
+            <img src="Images/logo.png" width="10%">
+            <img src="Images/xclusive.png" width="10%"><img src="Images/fx.png" width="3%">
+           <table style="margin-top: -80px;margin-left: 530px;">
+               <tr>
+                   <td style="font-size: 20px;">FURAMA RIVERFRONT</td>
+               </tr>
+               <tr>
+                   <td>405 Havelock Road, Singapore 169633</td>
+               </tr>
+               <tr>
+                   <td><strong>Tel</strong> (65) 6333 8898 Fax (65) 6733 1588</td>
+               </tr>
+               <tr>
+                   <td><strong>Email</strong> riverfront@furama.com</td>
+               </tr>
+            </table>
+            <br>
+            <br>
+        </footer>
+        <script>
+            // Script to open and close sidebar
+            function w3_open()
+            {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close()
+            {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
